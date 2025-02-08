@@ -15,7 +15,33 @@ class user(db.Model):
 @app.route("/")
 def index():
     return render_template("index.html")
+@app.route("/")
+def index():
+    return render_template("index.html")
 
+@app.route("/mainpage")
+def mainpage():
+    return render_template("main page.html") 
+
+@app.route("/top_pics")
+def top_pics():
+    return render_template("top_pics.html")
+
+@app.route("/actor")
+def actor():
+    return render_template("actors.html")
+
+@app.route("/san")
+def san():
+    return render_template("san.html")
+
+@app.route("/dhaku")
+def dhaku():
+    return render_template("dhaku.html")
+
+@app.route("/game")
+def game():
+    return render_template("game.html")
 
 
 @app.route("/login",methods=["GET", "POST"])
